@@ -9,4 +9,5 @@ class User(Base):
     email = Column(String, unique=True, index=True)
     password = Column(String)
     
-    chats = relationship("ChatMessage", back_populates="user")
+    
+    # chats = relationship("ChatMessage", back_populates="user")
